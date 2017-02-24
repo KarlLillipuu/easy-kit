@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACH,gBAAgB,EAAE,OAAO",
+"sources": ["easy_kit.sass"],
+"names": [],
+"file": "style.css"
+}
