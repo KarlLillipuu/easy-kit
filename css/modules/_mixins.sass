@@ -1,0 +1,49 @@
+=reset
+	padding: 0
+	margin: 0
+
+=size($x)
+	width: $x
+	height: $x
+
+=radius($rad)
+	-webkit-border-radius: $rad
+	-moz-border-radius:    $rad
+	-ms-border-radius:     $rad
+	border-radius:         $rad
+
+=border($size, $color)
+	border: $size solid $color
+	-webkit-border: $size solid $color
+	-moz-border: $size solid $color
+	-ms-border: $size solid $color
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+/* @keyframes duration | timing-function | delay | 
+   iteration-count | direction | fill-mode | play-state | name */
+=animation($duration, $timing, $delay, $name)
+	-webkit-animation: $duration $timing $delay $name
+	-moz-animation: $duration $timing $delay $name
+	-ms-animation: $duration $timing $delay $name
+	-o-animation: $duration $timing $delay $name
+	animation: $duration $timing $delay $name
+	animation-direction: alternate
+
+=flex
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+
+=flex-wrap
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+
+=inverse($per)
+	filter: invert($per)

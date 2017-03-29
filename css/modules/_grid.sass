@@ -1,0 +1,45 @@
+//NB! Needs mixins to work
+.grid
+	+flex
+	+flex-wrap
+
+=col-size($per)
+	-webkit-box-flex: 0
+	-webkit-flex: 0 0 percentage($per/ 12)
+	-ms-flex: 0 0 percentage($per / 12)
+	flex: 0 0 percentage($per / 12)
+	max-width: percentage($per / 12)	
+
+//FULL WIDTH
+@for $i from 1 through 12
+	.col-#{$i}-xsmall, .col-#{$i}-small, .col-#{$i}-medium, .col-#{$i}-large
+		+col-size(12)
+
+//DEFAULT
+@for $i from 1 through 12
+	.col-#{$i}
+		+col-size($i)
+
+//EXTRA SMALL
+@media screen and (min-width: 400px)
+	@for $i from 1 through 12
+		.col-#{$i}-xsmall
+			+col-size($i)
+
+//SMALL
+@media screen and (min-width: 576px)
+	@for $i from 1 through 12
+		.col-#{$i}-small
+			+col-size($i)
+
+//MEDIUM
+@media screen and (min-width: 768px)
+	@for $i from 1 through 12
+		.col-#{$i}-medium
+			+col-size($i)
+
+//LARGE
+@media screen and (min-width: 992px)
+	@for $i from 1 through 12
+		.col-#{$i}-large
+			+col-size($i)
