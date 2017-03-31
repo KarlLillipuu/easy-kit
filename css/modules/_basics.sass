@@ -5,6 +5,8 @@ html, body
 	-webkit-tap-highlight-color: transparent
 	-webkit-font-smoothing: antialiased
 	-webkit-text-size-adjust: 100%
+	background-color: $primary-background
+	color: $primary-text
 
 .mid
 	text-align: center
@@ -13,18 +15,19 @@ html, body
 	text-align: center
 
 .L, .l, .left
-	text-align: left
+	float: left
 
 .R, .r, .right
-	text-align: right
+	float: right
 
 .border
 	box-sizing: border-box
 	border: 1px solid black
 
-.content-wrap
+.page-wrap
 	margin: 35px 65px
 
 @media screen and (max-width: 576px)
-	.content-wrap
+	.page-wrap
 		margin: 5px 10px
+

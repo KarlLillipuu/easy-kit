@@ -1,18 +1,12 @@
 html, body
 	line-height: 1.5
-	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+	font-family: $primary-font
 
 h1, h2, h3, h4, h5, h6
 	font-weight: bold
 
-.header-left
-	margin-left: 10px
-
-.header-middle
-	text-align: center
-
-.header-right
-	margin-right: 10px
+ul.no-bullet li
+	list-style-type: none
 
 .upper
 	text-transform: uppercase
@@ -24,7 +18,7 @@ h1, h2, h3, h4, h5, h6
 	text-transform: capitalize
 
 p
-	font-size: 14px
+	font-size: 16px
 
 a
 	color: #0074D9
@@ -34,3 +28,18 @@ a
 	&:hover,
 	&:focus
 		color: lighten(#0074D9, 20%)
+
+.codeblock
+	position: relative
+	display: blockś
+	font-size: 14px
+	line-height: 1.25
+	border-left: 5px solid $tertiary-background
+	font-family: $codeblock-font
+	color: $secondary-text
+	background: $codeblock
+	white-space: pre-wrap //css3
+	white-space: moz-pre-wrap //firefox
+	white-space: -pre-wrap //opera 4-6
+	white-space: -o-pre-wrap //opera 7
+	word-wrap: break-word //internet explorer

@@ -4,90 +4,133 @@
 	<meta charset="UTF-8">
 	<title>SaSS</title>
 	<link rel="stylesheet" href="css/easy_kit.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="content-wrap">
+	<div class="grid focus">
+		<div class="col-medium-12">
+			<div class="button-wrap">
+				<label class="switch">
+					<input type="checkbox" onclick="toggleFocus()">
+					<div class="slider round"></div>
+				</label>
+				<div class="button-info">Focus Mode</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-wrap">
+
 		<div class="grid">
 			<div class="col-12">
-				<h1 class="middle">Easy Kit by eroxeN</h1>
-			</div>
-		</div>
-		
-		<div class="grid">
-			<div class="col-12-medium">
-				<h3 class="header-left">Grid System</h3>
+				<h1 class="middle">Easy Kit Tutorial</h1>
+				<h4 class="middle">By eroxeN</h4>
 			</div>
 		</div>
 
-		<br>
-		<div class="grid">
-			<div class="col-1-xsmall border">col-1-xsmall</div>
-			<div class="col-1-xsmall border">col-1-xsmall</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-medium border">col-1-medium</div>
-			<div class="col-1-large border">col-1-large</div>
-			<div class="col-1-large border">col-1-large</div>
-		</div>
-		<br>
-		<div class="grid">
-			<div class="col-2-small border">col-2-small</div>
-			<div class="col-2-small border">col-2-small</div>
-			<div class="col-2-small border">col-2-small</div>
-			<div class="col-2-medium border">col-2-medium</div>
-			<div class="col-2-medium border">col-2-medium</div>
-			<div class="col-2-medium border">col-2-medium</div>
-		</div>
-		<br>
-		<div class="grid">
-			<div class="col-3-medium border">col-3-medium</div>
-			<div class="col-3-medium border">col-3-medium</div>
-			<div class="col-3-medium border">col-3-medium</div>
-			<div class="col-3-medium border">col-3-medium</div>
-		</div>
-		<br>
-		<div class="grid">
-			<div class="col-4-medium border">col-4-medium</div>
-			<div class="col-4-medium border">col-4-medium</div>
-			<div class="col-4-medium border">col-4-medium</div>
-		</div>
-		<br>
-		<div class="grid">
-			<div class="col-5-medium border">col-5-medium</div>
-			<div class="col-2-large border">col-2-large</div>
-			<div class="col-5-medium border">col-5-medium</div>
-		</div>
-		<br>
-		<div class="grid">
-			<div class="col-6-medium border">col-6-medium</div>
-			<div class="col-6-medium border">col-6-medium</div>
-		</div>
+		<div class="focus-wrap">
 
-		<div class="grid">
-			<div class="col-12-medium">
-				<h3 class="header-left">Typography</h3>
+			<div class="grid">
+				<div class="col-12-medium">
+					<h3 class="left">Grid System</h3>
+				</div>
 			</div>
-		</div>
+			
+			<p>Grid is crucial in responsive Web development. It gives many oppurtunities to layout website in many different ways and fast, without worring styling.</p>
 
-		<div class="grid">
-			<div class="col-6-medium">
-				<h1>Header1</h1>
-				<h2>Header2</h2>
-				<h3>Header3</h3>
+			<p>Easy-Kit grid is devided to 5 different categories:</p>
+				<ul>
+					<li>Large(< 992px),</li>
+					<li>Medium(< 768px),</li>
+					<li>Small(< 576px),</li>
+					<li>Extra Small(< 400px)</li>
+					<li>and Default( > 400px).</li>
+				</ul>
+			<p>It's a good way to control layout sizes in different types of screens(Desktops, mobiles etc).</p>
+			
+			<p>Grid example(try to resize your screen to see effects): </p>
+			<br>
+
+			<p>Code:</p>
+<pre class="codeblock">
+&lt;div class="grid">
+	&lt;div class="col-6-small border">
+		Col-6-Small
+	&lt;/div>
+	&lt;div class="col-6-small border">
+		Col-6-Small
+	&lt;/div>
+&lt;/div>
+</pre>
+			<p>Result:</p>
+			<div class="grid">
+				<div class="col-6-small border">
+					Col-6-Small
+				</div>
+				<div class="col-6-small border">
+					Col-6-Small
+				</div>
 			</div>
-			<div class="col-6-medium">
-				<h4>Header4</h4>
-				<h5>Header5</h5>
-				<h6>Header6</h6>
+
+			<p>Code:</p>
+<pre class="codeblock">
+&lt;div class="grid">
+	&lt;div class="col-6-small col-10-medium border">
+		Col-6-small Col-10-medium
+	&lt;/div>
+	&lt;div class="col-6-small col-2-medium border">
+		Col-6-small Col-2-medium
+	&lt;/div>
+&lt;/div>
+</pre>
+			<p>Result:</p>
+			<div class="grid">
+				<div class="col-6-small col-10-medium border">
+					Col-6-small Col-10-medium
+				</div>
+				<div class="col-6-small col-2-medium border">
+					Col-6-small Col-2-medium
+				</div>
 			</div>
+
+			<div class="grid">
+				<div class="col-12-medium">
+					<h3 class="left">Typography</h3>
+				</div>
+			</div>
+
+			<p>Code:</p>
+<pre class="codeblock">
+&lt;div class="grid">
+	&lt;div class="col-6-medium">
+		&lt;h1>Header1&lt;/h1>
+		&lt;h2>Header2&lt;/h2>
+		&lt;h3>Header3&lt;/h3>
+	&lt;/div>
+	&lt;div class="col-6-medium">
+		&lt;h4>Header4&lt;/h4>
+		&lt;h5>Header5&lt;/h5>
+		&lt;h6>Header6&lt;/h6>
+	&lt;/div>
+&lt;/div>
+</pre>
+
+			<p>Result:</p>
+			<div class="grid">
+				<div class="col-6-medium">
+					<h1>Header1</h1>
+					<h2>Header2</h2>
+					<h3>Header3</h3>
+				</div>
+				<div class="col-6-medium">
+					<h4>Header4</h4>
+					<h5>Header5</h5>
+					<h6>Header6</h6>
+				</div>
+			</div>
+
 		</div>
-
-
 	</div>
+<script src="site/app.js"></script>
 </body>
 </html>
