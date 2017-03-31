@@ -3,19 +3,28 @@ html, body
 	min-height: 100%
 	overflow-x: hidden
 	-webkit-tap-highlight-color: transparent
-
-a
-	color: #0074D9
-	text-decoration: none
-	outline: 0
-
-	&:hover,
-	&:focus
-		color: lighten(#0074D9, 20%)
+	-webkit-font-smoothing: antialiased
+	-webkit-text-size-adjust: 100%
 
 .mid
 	text-align: center
 
+.M, .m, .middle
+	text-align: center
+
+.L, .l, .left
+	text-align: left
+
+.R, .r, .right
+	text-align: right
+
 .border
 	box-sizing: border-box
 	border: 1px solid black
+
+.content-wrap
+	margin: 35px 65px
+
+@media screen and (max-width: 576px)
+	.content-wrap
+		margin: 5px 10px
