@@ -16,7 +16,7 @@ What will come:
 * Buttons,
 * Glyphicons,
 * Animations  
-and alerts styling!  
+and alerts styling!!!
 
 
 Easy-Kit is currently in development.
