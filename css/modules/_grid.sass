@@ -21,25 +21,25 @@
 		+col-size($i)
 
 //EXTRA SMALL
-@media screen and (min-width: 400px)
+@media screen and (min-width: $xsmall)
 	@for $i from 1 through 12
 		.col-#{$i}-xsmall
 			+col-size($i)
 
 //SMALL
-@media screen and (min-width: 576px)
+@media screen and (min-width: $small)
 	@for $i from 1 through 12
 		.col-#{$i}-small
 			+col-size($i)
 
 //MEDIUM
-@media screen and (min-width: 768px)
+@media screen and (min-width: $medium)
 	@for $i from 1 through 12
 		.col-#{$i}-medium
 			+col-size($i)
 
 //LARGE
-@media screen and (min-width: 992px)
+@media screen and (min-width: $large)
 	@for $i from 1 through 12
 		.col-#{$i}-large
 			+col-size($i)

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* @keyframes duration | timing-function | delay |
  * iteration-count | direction | fill-mode | play-state | name */
 html, body {
@@ -8,6 +7,42 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 24px; }
+
+  h2 {
+    font-size: 22px; }
+
+  h3 {
+    font-size: 20px; }
+
+  h4 {
+    font-size: 18px; }
+
+  h5 {
+    font-size: 16px; }
+
+  h6 {
+    font-size: 14px; } }
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 42px; }
+
+  h2 {
+    font-size: 36px; }
+
+  h3 {
+    font-size: 30px; }
+
+  h4 {
+    font-size: 24px; }
+
+  h5 {
+    font-size: 18px; }
+
+  h6 {
+    font-size: 12px; } }
 ul.no-bullet li {
   list-style-type: none; }
 
@@ -19,6 +54,18 @@ ul.no-bullet li {
 
 .capital {
   text-transform: capitalize; }
+
+.mid {
+  text-align: center; }
+
+.M, .m, .middle {
+  text-align: center; }
+
+.L, .l, .left {
+  text-align: left; }
+
+.R, .r, .right {
+  text-align: right; }
 
 p {
   font-size: 16px; }
@@ -32,7 +79,7 @@ a {
 
 .codeblock {
   position: relative;
-  display: block┼ø;
+  display: block;
   font-size: 14px;
   line-height: 1.25;
   border-left: 5px solid #903749;
@@ -55,18 +102,6 @@ html, body {
   -webkit-text-size-adjust: 100%;
   background-color: #2B2E4A;
   color: #fff; }
-
-.mid {
-  text-align: center; }
-
-.M, .m, .middle {
-  text-align: center; }
-
-.L, .l, .left {
-  float: left; }
-
-.R, .r, .right {
-  float: right; }
 
 .border {
   box-sizing: border-box;
@@ -591,10 +626,6 @@ html, body {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%; } }
-.focus-wrap {
-  margin: auto 25%;
-  transition: 1s; }
-
 .button-wrap {
   position: relative;
   display: block;
@@ -649,11 +680,21 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
-@media screen and (max-width: 576px) {
+.focus-wrap {
+  position: relative;
+  transition: 1s; }
+
+.focus-active {
+  margin: auto 25%; }
+
+.focus-inactive {
+  margin: 0; }
+
+@media screen and (max-width: 768px) {
   .focus {
     display: none; }
 
-  .focus-wrap {
+  .focus-active {
     margin: 0; } }
 
 /*# sourceMappingURL=easy_kit.css.map */

@@ -5,6 +5,16 @@ html, body
 h1, h2, h3, h4, h5, h6
 	font-weight: bold
 
+@media screen and (min-width: $small)
+	@for $i from 1 through 6
+		h#{$i}
+			font-size: (26 - $i*2px)
+
+@media screen and (min-width: $medium)
+	@for $i from 1 through 6
+		h#{$i}
+			font-size: (48 - $i*6px)
+
 ul.no-bullet li
 	list-style-type: none
 
@@ -16,6 +26,18 @@ ul.no-bullet li
 
 .capital
 	text-transform: capitalize
+
+.mid
+	text-align: center
+
+.M, .m, .middle
+	text-align: center
+
+.L, .l, .left
+	text-align: left
+
+.R, .r, .right
+	text-align: right
 
 p
 	font-size: 16px
@@ -31,7 +53,7 @@ a
 
 .codeblock
 	position: relative
-	display: blockś
+	display: block
 	font-size: 14px
 	line-height: 1.25
 	border-left: 5px solid $tertiary-background

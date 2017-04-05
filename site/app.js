@@ -1,16 +1,7 @@
-var focus = 0;
-var wrap = document.getElementsByClassName('focus-wrap')[0];
-wrap.style.margin = "0";
-
+//Focus button functionality - class swapping
+var element = document.getElementsByClassName('focus-wrap focus-inactive')[0];
 function toggleFocus() {
-	var wrap = document.getElementsByClassName('focus-wrap')[0];
-    if (focus === 0) {
-        wrap.style.margin = "auto 25%";
-        focus = 1;
-        console.log(focus + "on");
-    } else {
-       	wrap.style.margin = "0";
-       	focus = 0;
-       	console.log(focus + "off");
-    }
+	if(element.className) {
+		element.className = (element.className == 'focus-wrap focus-inactive') ? 'focus-wrap focus-active' : 'focus-wrap focus-inactive';
+	}
 }

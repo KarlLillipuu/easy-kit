@@ -1,7 +1,3 @@
-.focus-wrap
-	margin: auto 25%
-	transition: 1s
-
 .button-wrap
 	position: relative
 	display: block
@@ -43,7 +39,6 @@
 input:checked + .slider 
 	background-color: $on
 
-
 input:focus + .slider 
 	box-shadow: 0 0 1px $on
 
@@ -58,8 +53,18 @@ input:checked + .slider:before
 .slider.round:before 
 	border-radius: 50%
 
-@media screen and (max-width: 576px)
+.focus-wrap
+	position: relative
+	transition: 1s
+
+.focus-active
+	margin: auto 25%
+
+.focus-inactive
+	margin: 0
+
+@media screen and (max-width: $medium)
 	.focus
 		display: none
-	.focus-wrap
+	.focus-active
 		margin: 0
