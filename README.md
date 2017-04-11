@@ -1,8 +1,8 @@
 # Fanci - Sass/Css Framework  
-Easy-Kit is a css framework, what's using SASS. It's a light and modular which is easy to use and customizable.
+Fanci is a css framework, what's using SASS. It's a light and modular which is easy to use and customizable.
 
 
-Easy-Kit includes:
+Fanci includes:
 * Basic 12grid system
 * Basic typography styles
 * Mixins aka functions
