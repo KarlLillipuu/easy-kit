@@ -1,4 +1,4 @@
-# Easy-Kit - Sass/Css Framework  
+# Fanci - Sass/Css Framework  
 Easy-Kit is a css framework, what's using SASS. It's a light and modular which is easy to use and customizable.
 
 
@@ -19,6 +19,6 @@ What will come:
 and alerts styling!!!
 
 
-Easy-Kit is currently in development.
+Fanci is currently in development.
 For more info: eroxen29@gmail.com
 Developed by: Karl Robert Lillipuu
