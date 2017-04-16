@@ -26,12 +26,12 @@
 
 /* @keyframes duration | timing-function | delay | 
    iteration-count | direction | fill-mode | play-state | name */
-=animation($duration, $timing, $delay, $name)
-	-webkit-animation: $duration $timing $delay $name
-	-moz-animation: $duration $timing $delay $name
-	-ms-animation: $duration $timing $delay $name
-	-o-animation: $duration $timing $delay $name
-	animation: $duration $timing $delay $name
+=animation($args... )
+	-webkit-animation: $args
+	-moz-animation: $args
+	-ms-animation: $args
+	-o-animation: $args
+	animation: $args
 	animation-direction: alternate
 
 =flex
@@ -47,3 +47,7 @@
 
 =inverse($per)
 	filter: invert($per)
+
+=transition($t)
+	-webkit-transition: $t
+	transition: $t

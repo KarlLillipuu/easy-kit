@@ -1,3 +1,9 @@
+.border
+	box-sizing: border-box
+	border: 1px solid #000
+
+/* Focus button */
+
 .button-wrap
 	position: relative
 	display: block
@@ -20,10 +26,9 @@
 	left: 0
 	right: 0
 	bottom: 0
-	background-color: $off
+	background-color: #424242
 	-webkit-transition: .4s
 	transition: .4s
-
 
 .slider:before 
 	position: absolute
@@ -37,10 +42,10 @@
 	transition: .4s
 
 input:checked + .slider 
-	background-color: $on
+	background-color: #e74c3c
 
 input:focus + .slider 
-	box-shadow: 0 0 1px $on
+	box-shadow: 0 0 1px #e74c3c
 
 input:checked + .slider:before 
 	-webkit-transform: translateX(26px)
@@ -63,7 +68,7 @@ input:checked + .slider:before
 .focus-inactive
 	margin: 0
 
-@media screen and (max-width: $medium)
+@media screen and (max-width: 768px)
 	.focus
 		display: none
 	.focus-active

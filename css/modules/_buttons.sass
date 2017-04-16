@@ -1,0 +1,70 @@
+button:focus
+	outline: 0
+
+.btn
+	position: relative
+	background: none
+	box-sizing: border-box
+	vertical-align: middle
+	margin: 1em
+	padding: 10px
+	border: 1px solid $secondary-background
+	color: $primary-text
+	cursor: pointer
+	+transition(0.25s)
+
+	&::before,
+	&::after
+		box-sizing: inherit
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+
+	&:hover
+		background: $secondary-background
+
+	&:active
+		background: $tertiary-background
+		color: $secondary-text
+
+.anim-border
+	border: none
+	+transition(0.25s)
+
+	&::before,
+	&::after
+		border: 2px solid transparent
+		+size(0px)
+
+	&::before
+		top: 0
+		left: 0
+
+	&::after
+		bottom: 0
+		right: 0
+
+	&:hover
+		color: $secondary-background
+		background: none
+
+	&:hover::before,
+	&:hover::after
+		+size(100%)
+		background: none
+
+	&:hover::before
+		border-top-color: $tertiary-background
+		border-right-color: $tertiary-background
+		transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+		background: none
+
+	&:hover::after
+		border-bottom-color: $secondary-background
+		border-left-color: $secondary-background
+		transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+
+	&:active
+		background: $secondary-background
+		color: $secondary-text
