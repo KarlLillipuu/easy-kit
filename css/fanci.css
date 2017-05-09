@@ -7,6 +7,27 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
+p {
+  font-size: 16px; }
+
+h1 {
+  font-size: 22px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
 @media screen and (min-width: 576px) {
   h1 {
     font-size: 24px; }
@@ -46,9 +67,20 @@ h1, h2, h3, h4, h5, h6 {
 ul.no-bullet li {
   list-style-type: none; }
 
-.lined {
-  padding-bottom: 5px;
-  text-decoration: underline; }
+.lined-small {
+  border-left: 0.5px solid #e74c3c;
+  border-bottom: 1px solid #e85647;
+  padding-left: 5px; }
+
+.lined-medium {
+  border-left: 1px solid #e74c3c;
+  border-bottom: 2px solid #e85647;
+  padding-left: 5px; }
+
+.lined-big {
+  border-left: 1.5px solid #e74c3c;
+  border-bottom: 3px solid #e85647;
+  padding-left: 5px; }
 
 .upper {
   text-transform: uppercase; }
@@ -60,7 +92,8 @@ ul.no-bullet li {
   text-transform: capitalize; }
 
 .mid {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 .M, .m, .middle {
   text-align: center; }
@@ -71,22 +104,19 @@ ul.no-bullet li {
 .R, .r, .right {
   text-align: right; }
 
-p {
-  font-size: 16px; }
-
 a {
-  color: #0074D9;
+  color: #fff;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #40a6ff; }
+    color: #cccccc; }
 
 .codeblock {
   position: relative;
   display: block;
   font-size: 14px;
   line-height: 1.25;
-  border-left: 5px solid #c0392b;
+  border-left: 5px solid #d62c1a;
   font-family: "Consolas";
   color: #111;
   background: #e74c3c;
@@ -96,16 +126,19 @@ a {
   white-space: -o-pre-wrap;
   word-wrap: break-word; }
 
-html, body {
+html {
+  height: 100%; }
+
+body {
   padding: 0;
   margin: 0;
   min-height: 100%;
-  overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  background-color: #212121;
-  color: #fff; }
+  background-color: #222;
+  color: #fff;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .page-wrap {
   margin: 35px 65px; }
@@ -634,29 +667,56 @@ button:focus {
   background: none;
   box-sizing: border-box;
   vertical-align: middle;
-  margin: 1em;
+  margin: 5px;
   padding: 10px;
   border: 1px solid #e74c3c;
   color: #fff;
   cursor: pointer;
   -webkit-transition: 0.25s;
   transition: 0.25s; }
-  .btn::before, .btn::after {
-    box-sizing: inherit;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%; }
-  .btn:hover {
-    background: #e74c3c; }
-  .btn:active {
-    background: #c0392b;
-    color: #111; }
+
+.btn-default::before, .btn-info::before, .btn-success::before, .btn-warning::before, .btn-danger::before, .anim-border::before, .btn-default::after, .btn-info::after, .btn-success::after, .btn-warning::after, .btn-danger::after, .anim-border::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+.btn-default:hover, .btn-info:hover, .btn-success:hover, .btn-warning:hover, .btn-danger:hover, .anim-border:hover {
+  background: #e74c3c; }
+.btn-default:active, .btn-info:active, .btn-success:active, .btn-warning:active, .btn-danger:active, .anim-border:active {
+  background: #d62c1a;
+  color: #111; }
+
+.btn-info {
+  border: 1px solid #2196F3; }
+  .btn-info:hover {
+    background: #2196F3; }
+  .btn-info:active {
+    background: #0c7cd5; }
+
+.btn-success {
+  border: 1px solid #4CAF50; }
+  .btn-success:hover {
+    background: #4CAF50; }
+  .btn-success:active {
+    background: #3d8b40; }
+
+.btn-warning {
+  border: 1px solid #FFC107; }
+  .btn-warning:hover {
+    background: #FFC107; }
+  .btn-warning:active {
+    background: #d39e00; }
+
+.btn-danger {
+  border: 1px solid #F44336; }
+  .btn-danger:hover {
+    background: #F44336; }
+  .btn-danger:active {
+    background: #ea1c0d; }
 
 .anim-border {
-  border: none;
-  -webkit-transition: 0.25s;
-  transition: 0.25s; }
+  border: none; }
   .anim-border::before, .anim-border::after {
     border: 2px solid transparent;
     width: 0px;
@@ -675,8 +735,8 @@ button:focus {
     height: 100%;
     background: none; }
   .anim-border:hover::before {
-    border-top-color: #c0392b;
-    border-right-color: #c0392b;
+    border-top-color: #e74c3c;
+    border-right-color: #e74c3c;
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
     background: none; }
   .anim-border:hover::after {
@@ -684,7 +744,7 @@ button:focus {
     border-left-color: #e74c3c;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
   .anim-border:active {
-    background: #e74c3c;
+    background: #d62c1a;
     color: #111; }
 
-/*# sourceMappingURL=easy_kit.css.map */
+/*# sourceMappingURL=fanci.css.map */

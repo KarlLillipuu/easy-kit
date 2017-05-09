@@ -3,211 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SaSS</title>
-	<link rel="stylesheet" href="css/easy_kit.css">
+	<link rel="stylesheet" href="css/fanci.css">
 	<link rel="stylesheet" href="site/site.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="grid focus">
-		<div class="col-medium-12">
-			<div class="button-wrap">
-				<label class="switch">
-					<input type="checkbox" onclick="toggleFocus()">
-					<div class="slider round"></div>
-				</label>
-				<div class="button-info">Focus Mode</div>
+
+<div class="header-wrap">
+	<div class="grid">
+		<div class="col-12-medium">
+			<div id="header">
+					<h1>
+						<img src="site/fanci2.svg" alt="Fanci">
+						Fanci - SASS Framework
+					</h1>
+				</div>
 			</div>
+				<div class="mid">
+					<a href="documentation.html">
+						<button class="btn anim-border">
+							<h6 class="upper">Documentation</h6>
+						</button>
+					</a>
+				</div>
 		</div>
 	</div>
-
-	<div class="page-wrap">
-
-		<div class="grid">
-			<div class="col-12">
-				<h1 class="middle">Fanci SASS/CSS Framework</h1>
-				<h3 class="middle">Documentation</h3>
-				<h4 class="middle">By eroxeN</h4>
-			</div>
-		</div>
-
-		<div class="focus-wrap focus-inactive">
-
-			<div class="grid">
-				<div class="col-12-medium">
-					<h4 class="left lined">Grid System</h4>	
-				</div>
-			</div>
-			
-			<p>Grid is crucial in responsive Web development. It gives many oppurtunities to layout website in many different ways and fast, without worring styling.</p>
-
-			<p>Easy-Kit grid is devided to 5 different categories:</p>
-				<ul>
-					<li>Large(< 992px),</li>
-					<li>Medium(< 768px),</li>
-					<li>Small(< 576px),</li>
-					<li>Extra Small(< 400px)</li>
-					<li>and Default(non-responsive).</li>
-				</ul>
-			<p>It's a good way to control layout sizes in different types of screens(Desktops, mobiles etc).</p>
-			
-			<p>Grid example(try to resize your screen to see effects): </p>
-			<br>
-
-			<p>Code:</p>
-<pre class="codeblock">
-&lt;div class="grid">
-	&lt;div class="col-6-small border">
-		Col-6-Small
-	&lt;/div>
-	&lt;div class="col-6-small border">
-		Col-6-Small
-	&lt;/div>
-&lt;/div>
-</pre>
-			<p>Result:</p>
-			<div class="grid">
-				<div class="col-6-small border">
-					Col-6-Small
-				</div>
-				<div class="col-6-small border">
-					Col-6-Small
-				</div>
-			</div>
-
-			<p>Code:</p>
-<pre class="codeblock">
-&lt;div class="grid">
-	&lt;div class="col-6-small col-10-medium border">
-		Col-6-small Col-10-medium
-	&lt;/div>
-	&lt;div class="col-6-small col-2-medium border">
-		Col-6-small Col-2-medium
-	&lt;/div>
-&lt;/div>
-</pre>
-			<p>Result:</p>
-			<div class="grid">
-				<div class="col-6-small col-10-medium border">
-					Col-6-small Col-10-medium
-				</div>
-				<div class="col-6-small col-2-medium border">
-					Col-6-small Col-2-medium
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-12-medium">
-					<h3 class="left lined">Typography</h3>
-				</div>
-			</div>
-
-			<div class="grid lined">
-				<div class="col-12-medium">
-					<h4 class="left">Headers</h4>
-				</div>
-			</div>
-
-			<p>Headers are very common things that sites use, so it's important to keep them as good as possible. One of the problems, even I(eroxeN) had a problem, when headers didn't fit in mobile. Now there is no problem with that.</p>
+</div>
 
 
-			<p>Code:</p>
-<pre class="codeblock">
-&lt;div class="grid">
-	&lt;div class="col-6-medium">
-		&lt;h1>Header1&lt;/h1>
-		&lt;h2>Header2&lt;/h2>
-		&lt;h3>Header3&lt;/h3>
-	&lt;/div>
-	&lt;div class="col-6-medium">
-		&lt;h4>Header4&lt;/h4>
-		&lt;h5>Header5&lt;/h5>
-		&lt;h6>Header6&lt;/h6>
-	&lt;/div>
-&lt;/div>
-</pre>
 
-			<p>Result:</p>
-			<div class="grid">
-				<div class="col-6-medium">
-					<h1>Header1</h1>
-					<h2>Header2</h2>
-					<h3>Header3</h3>
-				</div>
-				<div class="col-6-medium">
-					<h4>Header4</h4>
-					<h5>Header5</h5>
-					<h6>Header6</h6>
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-12-medium">
-					<h4 class="left lined">Text Positioning</h4>
-				</div>
-			</div>
-
-			<p>Code:</p>
-<pre class="codeblock">
-&lt;div class="grid">
-	&lt;div class="col-4-medium border">
-		&lt;div class="L">Left&lt;/div>
-		&lt;div class="l">Left&lt;/div>
-		&lt;div class="left">Left&lt;/div>
-	&lt;/div>
-	&lt;div class="col-4-medium border">
-		&lt;div class="R">Right&lt;/div>
-		&lt;div class="r">Right&lt;/div>
-		&lt;div class="right">Right&lt;/div>
-	&lt;/div>
-	&lt;div class="col-4-medium border">
-		&lt;div class="M">Middle&lt;/div>
-		&lt;div class="m">Middle&lt;/div>
-		&lt;div class="middle">Middle&lt;/div>
-	&lt;/div>
-&lt;/div>
-</pre>
-
-			<p>Result:</p>
-			<div class="grid">
-				<div class="col-4-medium border">
-					<div class="L">Left</div>
-					<div class="l">Left</div>
-					<div class="left">Left</div>
-				</div>
-				<div class="col-4-medium border">
-					<div class="M">Middle</div>
-					<div class="m">Middle</div>
-					<div class="middle">Middle</div>
-				</div>
-				<div class="col-4-medium border">
-					<div class="R">Right</div>
-					<div class="r">Right</div>
-					<div class="right">Right</div>
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-12-medium">
-					<h4 class="left lined">Buttons</h4>
-				</div>
-			</div>
-
-			<div class="grid">
-				<div class="col-4-medium">
-					<button class="btn anim-border">
-						<p>Button Animated</p>
-					</button>
-				</div>
-				<div class="col-4-medium">
-					<button class="btn">Button Default</button>
-				</div>
-				<div class="col-4-medium"></div>
-			</div>
-			
-		
-
-		</div>
-	</div>
-<script src="site/app.js"></script>
 </body>
 </html>
