@@ -29,8 +29,8 @@ $sizes: small medium big
 $br-size: 1
 @each $size in $sizes
 	.lined-#{$size}
-		border-left: $br-size * 0.5px solid $secondary-background
-		border-bottom: $br-size * 1px solid lighten($secondary-background, 2.5%)
+		border-left: $br-size * 0.5px solid $secondary
+		border-bottom: $br-size * 1px solid lighten($secondary, 2.5%)
 		padding-left: 5px
 		$br-size: $br-size + 1
 
@@ -57,25 +57,10 @@ $br-size: 1
 	text-align: right
 
 a
-	color: $primary-text
+	color: $secondary-text
 	text-decoration: none
 	outline: 0
 
 	&:hover,
 	&:focus
-		color: darken($primary-text, 20%)
-
-.codeblock
-	position: relative
-	display: block
-	font-size: 14px
-	line-height: 1.25
-	border-left: 5px solid $tertiary-background
-	font-family: $codeblock-font
-	color: $secondary-text
-	background: $codeblock
-	white-space: pre-wrap //css3
-	white-space: moz-pre-wrap //firefox
-	white-space: -pre-wrap //opera 4-6
-	white-space: -o-pre-wrap //opera 7
-	word-wrap: break-word //internet explorer
+		color: darken($secondary-text, 20%)

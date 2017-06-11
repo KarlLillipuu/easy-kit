@@ -8,10 +8,13 @@ button:focus
 	vertical-align: middle
 	margin: 5px
 	padding: 10px
-	border: 1px solid $secondary-background
-	color: $primary-text
+	border: 1px solid $secondary
+	color: $secondary-text
 	cursor: pointer
 	+transition(0.25s)
+
+.block
+	min-width: 100px !important
 
 .btn-default
 	&::before,
@@ -22,10 +25,10 @@ button:focus
 		+size(100%)
 
 	&:hover
-		background: $secondary-background
+		background: $secondary
 
 	&:active
-		background: darken($secondary-background, 10%)
+		background: darken($secondary, 10%)
 		color: $secondary-text
 
 .btn-info
@@ -83,7 +86,7 @@ button:focus
 		right: 0
 
 	&:hover
-		color: $secondary-background
+		color: $secondary
 		background: none
 
 	&:hover::before,
@@ -92,16 +95,16 @@ button:focus
 		background: none
 
 	&:hover::before
-		border-top-color: $secondary-background
-		border-right-color: $secondary-background
+		border-top-color: $secondary
+		border-right-color: $secondary
 		transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
 		background: none
 
 	&:hover::after
-		border-bottom-color: $secondary-background
-		border-left-color: $secondary-background
+		border-bottom-color: $secondary
+		border-left-color: $secondary
 		transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
 
 	&:active
-		background: darken($secondary-background, 10%)
+		background: darken($secondary, 10%)
 		color: $secondary-text

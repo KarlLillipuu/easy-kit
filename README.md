@@ -1,12 +1,14 @@
-# Fanci - Sass/Css Framework  
-Fanci is a css framework, what's using SASS. It's a light and modular which is easy to use and customizable.
+# Fanci - Sass/Css library  
+Fanci is a css library, what's using SASS. It's a light and modular which is easy to use and customizable. It's used for making fast and responsive prototypes/websites.
 
+[Fanci Documentation](https://eroxen.github.io/fanci/)
 
-Fanci includes:
+Fanci (currently) includes:
 * Basic 12grid system
 * Basic typography styles
-* Mixins aka functions
+* Mixins / functions
 * Basic styling classes
+* Easy UI coloring
 
 
 What will come:
@@ -21,4 +23,4 @@ and alerts styling!!!
 
 Fanci is currently in development.
 For more info: eroxen29@gmail.com
-Developed by: Karl Robert Lillipuu
+Developed by: Karl Robert Lillipuu / eroxeN

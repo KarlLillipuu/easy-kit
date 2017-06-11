@@ -1,0 +1,25 @@
+.form-wrap
+	position: relative
+	width: 100%
+
+.form-input, .form-select, .form-submit
+	position: relative
+	display: block
+	width: 100%
+	padding: 12px 20px
+	margin: 10px 0px
+
+
+.form-input, .form-select
+	width: 100%
+	border: 1px solid $secondary
+	box-sizing: border-box
+
+.form-submit
+	border: none
+	color: $secondary-text
+	background-color: $secondary
+	+transition(0.25s)
+
+	&:hover
+		background-color: darken($secondary, 10%)
