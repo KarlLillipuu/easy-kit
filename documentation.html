@@ -147,6 +147,8 @@
 				</div>
 			</div>
 
+			<p>Basic text/other things positioning.</p>
+
 			<p>Code:</p>
 <pre><code class="html">
 &lt;div class="grid">
@@ -192,6 +194,8 @@
 					<h4 class="left lined-medium">Buttons</h4>
 				</div>
 			</div>
+
+			<p>Everyone love buttons!</p>
 
 			<p>Code:</p>
 <pre><code class="html">
@@ -267,27 +271,53 @@
 				<div class="col-12-medium">
 					<h4 class="left lined-medium">Forms</h4>
 				</div>
-			</div>	
+			</div>
+
+			<p>Simple, responsive, nice-looking form! <br>
+				<span style="color: red">NB! </span>Doesn't have security controls & proper functionality!</p>
+			</p>
 
 			<p>Code:</p>
 <pre><code class="html">
 &lt;div class="grid">
-	&lt;div class="col-12-medium">
+	&lt;div class="col-4-medium col-6-small col-12-xsmall mid">
 		&lt;div class="form-wrap">
-			&lt;input type="text" class="form-input" placeholder="Name">
+			&lt;label for="name" class="form-label">Name&lt;/label>
+			&lt;input type="text" class="form-input" placeholder="Jyri Matson">
+			&lt;label for="email" class="form-label">E-Mail&lt;/label>
+			&lt;input type="email" class="form-input" placeholder="Jyrimatson@email.com">
+			&lt;label for="password" class="form-label">Password&lt;/label>
+			&lt;input type="password" class="form-input" placeholder="********">
+			&lt;label for="requirements" class="form-label">
+				&lt;input type="radio" class="form-radio" value="1">
+				I agree with the terms and requirements
+			&lt;/label>
+			&lt;label for="more-info">More info:&lt;/label>
+			&lt;textarea name="more-info left" cols="30" rows="10" class="form-textarea">&lt;/textarea>
+		
 			&lt;input type="submit" class="form-submit">
 		&lt;/div>
 	&lt;/div>
 &lt;/div>
 </code></pre>
 
-
-
 			<p>Result:</p>
 			<div class="grid">
-				<div class="col-12-medium">
+				<div class="col-4-medium col-6-small col-12-xsmall mid">
 					<div class="form-wrap">
-						<input type="text" class="form-input" placeholder="Name">
+						<label for="name" class="form-label">Name</label>
+						<input type="text" class="form-input" placeholder="Jyri Matson">
+						<label for="email" class="form-label">E-Mail</label>
+						<input type="email" class="form-input" placeholder="jyrimatson@email.com">
+						<label for="password" class="form-label">Password</label>
+						<input type="password" class="form-input" placeholder="********">
+						<label for="requirements" class="form-label">
+							<input type="radio" class="form-radio" value="1">
+							I agree with the terms and requirements
+						</label>
+						<label for="more-info">More info:</label>
+						<textarea name="more-info left" cols="30" rows="10" class="form-textarea"></textarea>
+					
 						<input type="submit" class="form-submit">
 					</div>
 				</div>
@@ -295,7 +325,6 @@
 
 		</div>
 	</div>
-
 <link rel="stylesheet" href="highlight/styles/darcula.css">
 <script src="highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
