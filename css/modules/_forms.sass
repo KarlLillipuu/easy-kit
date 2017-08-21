@@ -1,3 +1,7 @@
+// :: Forms file ::
+// Description: Contains form styling
+// Requirements: mixins.sass, colours.sass
+
 .form-wrap
 	position: relative
 	width: 100%
@@ -8,7 +12,10 @@ label.form-label
 	text-align: left
 	margin: 10px
 
-.form-input, .form-select, .form-submit, .form-textarea
+input:focus, select:focus, textarea:focus
+	outline: 0
+
+.form-input, .form-textarea
 	position: relative
 	display: block
 	width: 100%
@@ -18,13 +25,30 @@ label.form-label
 .form-input, .form-select
 	border: 1px solid $secondary
 	box-sizing: border-box
+	background-color: $primary
 
-.form-radio
-	position: relative
+input[type=radio].form-input
 	display: inline-block
+	width: 20px
+	vertical-align: baseline
 
+input[type=checkbox].form-input
+	display: none
 
-.form-submit
+input[type=checkbox].form-input + label:before
+	+size(15px)
+	display: inline-block
+	margin-right: 10px
+	border: 1px solid $gray
+	content: ''
+	+transition(0.25s)
+
+input[type=checkbox].form-input:checked + label:before
+	content: ''
+	background: $gray
+	border: 1px solid darken($gray, 10%)
+
+input[type=submit].form-input
 	border: none
 	color: $secondary-text
 	background-color: $secondary
@@ -33,24 +57,29 @@ label.form-label
 	&:hover
 		background-color: darken($secondary, 10%)
 
-input[type=text], input[type=email], input[type=password]
+input[type]
 	border: none
 	border-left: 2px solid $secondary
 	border-bottom: 3px solid $secondary
 	background-color: $primary
 
-input:focus
-	outline: 0
+select.form-select
+	position: relative
+	display: block
+	width: 100%
+	padding: 12px 20px
+	margin: 10px 0px
 
 textarea.form-textarea
-	resize: none
-	outline: 0
 	box-sizing: border-box
 	background-color: $primary
 	border: 2px solid $secondary
 	font-family: $primary-font
-	+transition(0.5s)
+	+transition(0.25s)
 
 	&:focus
 		border: 2px solid $primary
 		background-color: $secondary
+
+	&.fixed
+		resize: none

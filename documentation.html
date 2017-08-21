@@ -283,19 +283,31 @@
 	&lt;div class="col-4-medium col-6-small col-12-xsmall mid">
 		&lt;div class="form-wrap">
 			&lt;label for="name" class="form-label">Name&lt;/label>
-			&lt;input type="text" class="form-input" placeholder="Jyri Matson">
+			&lt;input type="text" class="form-input" placeholder="John Smith">
 			&lt;label for="email" class="form-label">E-Mail&lt;/label>
-			&lt;input type="email" class="form-input" placeholder="Jyrimatson@email.com">
+			&lt;input type="email" class="form-input" placeholder="johnsmith@gmail.com">
+			&lt;label for="gender" class="form-label">Your Gender&lt;/label>
+			&lt;label class="form-label">
+				&lt;input id="male" type="radio" class="form-input" name="gender" value="male">
+				Male
+			&lt;/label>
+			&lt;label class="form-label">
+				&lt;input id="female" type="radio" class="form-input" name="gender" value="female">
+				Female
+			&lt;/label>
+			&lt;label for="drink" class="form-label">Favourite drink&lt;/label>
+			&lt;select name="drink" class="form-select">
+				&lt;option value="coffee">Coffee&lt;/option>
+				&lt;option value="coca-cola">Coca-Cola&lt;/option>
+				&lt;option value="water">Water&lt;/option>
+			&lt;/select>
 			&lt;label for="password" class="form-label">Password&lt;/label>
 			&lt;input type="password" class="form-input" placeholder="********">
-			&lt;label for="requirements" class="form-label">
-				&lt;input type="radio" class="form-radio" value="1">
-				I agree with the terms and requirements
-			&lt;/label>
-			&lt;label for="more-info">More info:&lt;/label>
-			&lt;textarea name="more-info left" cols="30" rows="10" class="form-textarea">&lt;/textarea>
-		
-			&lt;input type="submit" class="form-submit">
+			&lt;input id="agreement" type="checkbox" class="form-input" value="1">
+			&lt;label for="agreement">I agree with the terms and requirements&lt;/label>
+			&lt;label class="form-label" for="more-info">More info:&lt;/label>
+			&lt;textarea name="more-info left" rows="10" class="form-textarea">&lt;/textarea>
+			&lt;input type="submit" class="form-input">
 		&lt;/div>
 	&lt;/div>
 &lt;/div>
@@ -306,19 +318,31 @@
 				<div class="col-4-medium col-6-small col-12-xsmall mid">
 					<div class="form-wrap">
 						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-input" placeholder="Jyri Matson">
+						<input type="text" class="form-input" placeholder="John Smith">
 						<label for="email" class="form-label">E-Mail</label>
-						<input type="email" class="form-input" placeholder="jyrimatson@email.com">
+						<input type="email" class="form-input" placeholder="johnsmith@gmail.com">
+						<label for="gender" class="form-label">Your Gender</label>
+						<label class="form-label">
+							<input id="male" type="radio" class="form-input" name="gender" value="male">
+							Male
+						</label>
+						<label class="form-label">
+							<input id="female" type="radio" class="form-input" name="gender" value="female">
+							Female
+						</label>
+						<label for="drink" class="form-label">Favourite drink</label>
+						<select name="drink" class="form-select">
+							<option value="coffee">Coffee</option>
+							<option value="coca-cola">Coca-Cola</option>
+							<option value="water">Water</option>
+						</select>
 						<label for="password" class="form-label">Password</label>
 						<input type="password" class="form-input" placeholder="********">
-						<label for="requirements" class="form-label">
-							<input type="radio" class="form-radio" value="1">
-							I agree with the terms and requirements
-						</label>
-						<label for="more-info">More info:</label>
-						<textarea name="more-info left" cols="30" rows="10" class="form-textarea"></textarea>
-					
-						<input type="submit" class="form-submit">
+						<input id="agreement" type="checkbox" class="form-input" value="1">
+						<label for="agreement">I agree with the terms and requirements</label>
+						<label class="form-label" for="more-info">More info:</label>
+						<textarea name="more-info left" rows="10" class="form-textarea"></textarea>
+						<input type="submit" class="form-input">
 					</div>
 				</div>
 			</div>

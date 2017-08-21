@@ -116,6 +116,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   min-height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
@@ -744,7 +745,10 @@ label.form-label {
   text-align: left;
   margin: 10px; }
 
-.form-input, .form-select, .form-submit, .form-textarea {
+input:focus, select:focus, textarea:focus {
+  outline: 0; }
+
+.form-input, .form-textarea {
   position: relative;
   display: block;
   width: 100%;
@@ -753,41 +757,65 @@ label.form-label {
 
 .form-input, .form-select {
   border: 1px solid #aaa;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #ddd; }
 
-.form-radio {
-  position: relative;
-  display: inline-block; }
+input[type=radio].form-input {
+  display: inline-block;
+  width: 20px;
+  vertical-align: baseline; }
 
-.form-submit {
+input[type=checkbox].form-input {
+  display: none; }
+
+input[type=checkbox].form-input + label:before {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #aaa;
+  content: "";
+  -webkit-transition: 0.25s;
+  transition: 0.25s; }
+
+input[type=checkbox].form-input:checked + label:before {
+  content: "";
+  background: #aaa;
+  border: 1px solid #919191; }
+
+input[type=submit].form-input {
   border: none;
   color: #000;
   background-color: #aaa;
   -webkit-transition: 0.25s;
   transition: 0.25s; }
-  .form-submit:hover {
+  input[type=submit].form-input:hover {
     background-color: #919191; }
 
-input[type=text], input[type=email], input[type=password] {
+input[type] {
   border: none;
   border-left: 2px solid #aaa;
   border-bottom: 3px solid #aaa;
   background-color: #ddd; }
 
-input:focus {
-  outline: 0; }
+select.form-select {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0px; }
 
 textarea.form-textarea {
-  resize: none;
-  outline: 0;
   box-sizing: border-box;
   background-color: #ddd;
   border: 2px solid #aaa;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  -webkit-transition: 0.25s;
+  transition: 0.25s; }
   textarea.form-textarea:focus {
     border: 2px solid #ddd;
     background-color: #aaa; }
+  textarea.form-textarea.fixed {
+    resize: none; }
 
 /*# sourceMappingURL=fanci.css.map */
