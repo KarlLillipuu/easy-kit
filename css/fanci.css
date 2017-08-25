@@ -125,11 +125,17 @@ body {
   color: #000;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
-.page-wrap {
-  margin: 35px 65px; }
+.layout {
+  position: relative;
+  display: block; }
+  .layout.layout-default {
+    margin: 35px 65px; }
+  .layout.layout-expanded {
+    margin: 0;
+    width: 100%; }
 
 @media screen and (max-width: 576px) {
-  .page-wrap {
+  .layout.layout-default {
     margin: 5px 10px; } }
 .grid {
   display: -webkit-box;

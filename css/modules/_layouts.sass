@@ -1,0 +1,19 @@
+// :: Website layouts file ::
+// Description: Website layouts
+// Requirements: vars.sass
+
+.layout
+	position: relative
+	display: block
+
+	&.layout-default
+		margin: 35px 65px
+
+	&.layout-expanded
+		margin: 0
+		width: 100%
+
+@media screen and (max-width: $small)
+	.layout
+		&.layout-default
+			margin: 5px 10px
