@@ -1,7 +1,3 @@
-#Sass
-.sass-cache
-css/.sass-cache
-site/
-documentation.html
-index.html
-highlight/
+### Sass ###
+.sass-cache/
+*.css.map
