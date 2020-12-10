@@ -22,5 +22,5 @@ and alerts styling!!!
 
 
 Fanci is currently in development.
-For more info: eroxen29@gmail.com
-Developed by: Karl Robert Lillipuu / eroxeN
+For more info: stupidcats99@hotmail.com
+Developed by: stupidcats
